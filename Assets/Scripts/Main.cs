@@ -629,4 +629,12 @@ public class Main : MonoBehaviour
         else return false;
     }
 
+    public void ExitApplication()
+    {
+        if (ws != null)
+            ws.Close();
+
+        Application.Quit();
+    }
+
 }
